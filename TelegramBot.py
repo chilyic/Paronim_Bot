@@ -70,7 +70,7 @@ async def check(message: types.Message):
     button1 = buttons1[0]
     button2 = buttons2[0]
     await message.reply(question, reply_markup=keyboard_reply)
-
+        
 @dp.message_handler() 
 async def check_rp(message: types.Message): 
     global index
@@ -78,9 +78,7 @@ async def check_rp(message: types.Message):
     global button1
     global button2
     global button3
-
-    print(message.text)
-    
+        
     if message.text == button1:         
         await message.reply("Правильно!") 
         if index < len(questions) - 1:
