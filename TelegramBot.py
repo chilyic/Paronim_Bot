@@ -3,6 +3,8 @@ from aiogram import types, Dispatcher, Bot
 from aiogram.utils import executor
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, ReplyKeyboardMarkup 
 import random
+from keep_alive import keep_alive
+keep_alive()
 
 #bot = Bot(token='5631699730:AAH0LLLo-C9d-WaOa_HgVjQHYhUvtVME9Wg')
 bot = Bot(token='7778561726:AAE2IpeSc2clhpqDfCk-x-e9LosjsoPcJBI')
